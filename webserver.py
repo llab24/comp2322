@@ -1,6 +1,5 @@
 """
 COMP2322Project - Multi-thread Web Server
-24127442d
 """
 
 import socket
