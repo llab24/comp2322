@@ -90,7 +90,7 @@ Connection: close
 <html><body><h1>400 Bad Request</h1><p>The request could not be understood by the server.</p></body></html>% 
 ```
 
-### 3.5 Test 403 Forbidden3
+### 3.5 Test 403 Forbidden
 ```bash
 printf "GET /../../webserver.py HTTP/1.1\r\nHost: 127.0.0.1\r\n\r\n" | nc 127.0.0.1 8080
 ```
