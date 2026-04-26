@@ -30,6 +30,8 @@ Press Ctrl+C to stop
 ### 2.2 Stop the Server
 Press Ctrl + C in the terminal.
 
+---
+
 ## 3. How to Test
 
 ### 3.1 Test GET Text File (200 OK)
@@ -212,6 +214,8 @@ or
 Connection] Accepted connection from ('127.0.0.1', 61796)
 [200 OK] 127.0.0.1 - index.html
 ```
+
+---
 
 ## 4. Log File
 
