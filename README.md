@@ -200,7 +200,22 @@ Expected output:
 [x]  + done       curl -H "Connection: close" -s http://127.0.0.1:8080/index.html > /dev/null (five times)
 ```
 
-### 3.13 Test with Browser
+### 3.13 Test Log File
+After running the above tests, check the log file to verify all requests were recorded:
+```bash
+cat server.log
+```
+Expected output:
+```text
+2026-04-25 22:09:33 | 127.0.0.1 | index.html | 200
+2026-04-25 22:09:40 | 127.0.0.1 | test.png | 200
+2026-04-25 22:09:54 | 127.0.0.1 | asdf | 400
+2026-04-25 22:10:01 | 127.0.0.1 | /../../webserver.py | 403
+2026-04-25 22:10:09 | 127.0.0.1 | notexist.html | 404
+2026-04-25 22:10:53 | 127.0.0.1 | index.html | 304
+```
+
+### 3.14 Test with Browser
 Open a web browser and enter:
 ```text
 http://127.0.0.1:8080/index.html
